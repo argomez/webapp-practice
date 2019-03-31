@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+}
+.nav {
+  display:flex;
+  align-items: center;
+  margin: 16px;
+
+  >button {
+    background: white;
+    border: none;
+    border-radius: 8px; 
+
+    &:hover {
+      background-color: rgb(230, 237, 234);
+    }
+    &:focus {
+      border: none;
+    }
+  }
+}

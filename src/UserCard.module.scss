@@ -1,0 +1,34 @@
+.container {
+  width: 40vw;
+  height: 300px;
+  border: 1px solid blue;
+  padding: 16px;
+  background-color: lightcyan;
+  border-radius: 16px;
+}
+.userHeader {
+  display: flex;
+}
+.userHeaderTextContent {
+  padding: 8px 16px;
+  >* {
+    margin-bottom: 4px;
+  }
+  >:last-child {
+    margin-bottom: 0;
+  }
+}
+.avatar {
+  width: 140px;
+  height: 140px;
+}
+.userName {
+  font-size: 14pt;
+  font-weight: bold;
+}
+.userLink {
+  font-size: 10pt;
+}
+.userBio {
+  font-size: 12pt;
+}
