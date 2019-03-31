@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 import classes from './Carousel.module.scss';
-import { IconNavigateBefore } from './components/Icon';
-import { IconNavigateNext } from './components/Icon';
+import { IconNavigateBefore } from './Icon';
+import { IconNavigateNext } from './Icon';
 import UserCard from './UserCard';
 
 class Carousel extends React.Component {

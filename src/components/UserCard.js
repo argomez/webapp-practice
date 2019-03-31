@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classes from './UserCard.module.scss';
-import makeRequest from "./util/makeRequest";
+import makeRequest from '../util/makeRequest';
 
 class UserCard extends React.Component {
   state = {
@@ -38,7 +38,6 @@ class UserCard extends React.Component {
   }
 
   render() {
-    console.log(this.props.user)
     const user = this.props.user;
     return (
       <div className={classes.container}>
