@@ -1,0 +1,21 @@
+.postContainer {
+  background-color: rgb(215,248,255);
+  border-radius: 12px;
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: none;
+  }
+}
+
+.commentToggleButton {
+  margin-top: 16px;
+  max-width: 200px;
+  background: inherit;
+  border: none;
+  text-align: left;
+}

@@ -2,19 +2,23 @@
   text-align: center;
   height: 100%;
   width: 200px;
-  border-right: 1px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  &:hover {
-    -webkit-box-shadow: inset 0px 4px 77px -3px rgba(77,77,77,1);
-    -moz-box-shadow: inset 0px 4px 77px -3px rgba(77,77,77,1);
-    box-shadow: inset 0px 4px 77px -3px rgba(77,77,77,1);
+  &.active {
+    background-color: black;
+
+  }
+
+  &:hover:not(.active) {
+    -webkit-box-shadow: inset 0px 4px 77px -3px rgb(105, 105, 105);
+    -moz-box-shadow: inset 0px 4px 77px -3px rgb(105, 105, 105);
+    box-shadow: inset 0px 4px 77px -3px rgb(105, 105, 105);
   }
 }
 .button {
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   max-width: 170px;
 }

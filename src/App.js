@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import classes from './App.module.scss'
 import GitHubUsers from './views/GithubUsers';
+import Blog from './views/Blog';
 
 import NavBar from './NavBar';
 
@@ -11,10 +12,11 @@ const Home = () => (
 const viewComponentMap = {
   github: GitHubUsers,
   home: Home,
+  blog: Blog,
 }
 class App extends Component {
   state = {
-    view: 'github',
+    view: 'blog',
   }
 
   setCurrentView = view => {
@@ -27,7 +29,7 @@ class App extends Component {
     const CurrentView = viewComponentMap[this.state.view]
     return (
       <div className={classes.app}>
-        <NavBar onChange={this.setCurrentView} />
+        <NavBar onChange={this.setCurrentView} currentView={this.state.view} />
         <CurrentView />
       </div>
     );

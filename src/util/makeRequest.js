@@ -1,4 +1,6 @@
-const makeRequest = async (url, props = {}) => {
+const makeRequest = async (url, props = {
+  method: 'GET',
+}) => {
   // request data
   return new Promise((resolve, reject) => {
     fetch(url, props).then(response => {
